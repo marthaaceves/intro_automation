@@ -1,0 +1,125 @@
+{
+  "id": "db21fc07-5930-4b17-8ff4-83128f3e8be6",
+  "version": "2.0",
+  "name": "IMDB Test ",
+  "url": "https://www.imdb.com",
+  "tests": [{
+    "id": "3f9d8210-eee8-4225-ac9b-cd823ce1b364",
+    "name": "Busqueda de IT",
+    "commands": [{
+      "id": "04890955-5e40-4a09-ae8f-527d5bb93bb9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4a8acba-f966-4d2f-96a9-456f9c0178c2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "22c9ed36-c713-41f5-ae0a-824aeab8c6a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ipc-icon--arrow-drop-down > path:nth-child(2)",
+      "targets": [
+        ["css=.ipc-icon--arrow-drop-down > path:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffc68fb4-e2b4-43bb-a3d4-1a1384a9f244",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Titles",
+      "targets": [
+        ["linkText=Titles", "linkText"],
+        ["css=.\\_1xTnkpad08eEWkqotpqi4r:nth-child(2)", "css:finder"],
+        ["xpath=//span[@id='navbar-search-category-select-contents']/ul/a[2]", "xpath:idRelative"],
+        ["xpath=//span/ul/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Titles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c0552fb-b471-49c4-b54d-c46be870da0c",
+      "comment": "",
+      "command": "click",
+      "target": "id=suggestion-search",
+      "targets": [
+        ["id=suggestion-search", "id"],
+        ["name=q", "name"],
+        ["css=#suggestion-search", "css:finder"],
+        ["xpath=//input[@id='suggestion-search']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d2c66ff-2c4c-45a3-90ce-303f9d9131a9",
+      "comment": "",
+      "command": "type",
+      "target": "id=suggestion-search",
+      "targets": [
+        ["id=suggestion-search", "id"],
+        ["name=q", "name"],
+        ["css=#suggestion-search", "css:finder"],
+        ["xpath=//input[@id='suggestion-search']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "IT"
+    }, {
+      "id": "776c742e-df62-46e0-b549-a568beb68b70",
+      "comment": "",
+      "command": "click",
+      "target": "css=#suggestion-search-button > .ipc-icon",
+      "targets": [
+        ["css=#suggestion-search-button > .ipc-icon", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8c4dc41-27fc-46d3-a38b-898e974cccd7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.findHeader",
+      "targets": [
+        ["css=.findHeader", "css:finder"],
+        ["xpath=//div[@id='main']/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Displaying 8 results for \"IT\"')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "04c468b6-9f34-49ae-88b1-8aa8b0c553b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.findSectionHeader",
+      "targets": [
+        ["css=.findSectionHeader", "css:finder"],
+        ["xpath=//div[@id='main']/div/div[2]/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Titles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8df63b9a-1ee0-4f82-aecd-fb793308dc3d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=It",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4ec6461d-3951-4a56-b63f-8294bb4df3bb",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3f9d8210-eee8-4225-ac9b-cd823ce1b364"]
+  }],
+  "urls": ["https://www.imdb.com/"],
+  "plugins": []
+}
