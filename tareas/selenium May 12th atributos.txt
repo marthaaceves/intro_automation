@@ -1,0 +1,27 @@
+para poder automatizar es necesario identificar que tenga cualquiera de los siguientes 
+ID
+NAME
+Texto debe estar entre mayor que y menor que <>
+atributo
+todo esto para hacer el elemento unico 
+
+
+Carolina y Martha 
+<div id="login_with_amazon" 
+id=login_with_amazon
+
+<img alt="IMDbPro" 
+atributo=alt="IMDbPro"
+
+Help
+<a class="a-size-mini a-align- a-link-" target="_blank" rel="noopener" href="https://help.imdb.com/imdbpro?ref_=pro_ftr_help">Help</a>
+atributo= rel="noopener"
+text= Help
+
+Subscriber Agreement
+<a class="a-size-mini a-align- a-link-" target="_blank" rel="noopener" href="https://pro.imdb.com/subagreement?ref_=lwalogin_ftr_subagree">Subscriber Agreement</a>
+atributo= href="https://pro.imdb.com/subagreement?ref_=lwalogin_ftr_subagree"
+text=Subscriber Agreement
+
+
+
